@@ -124,7 +124,8 @@ def animate_activities(trajectory_or_activities, title='', shape=None, save=Fals
     ani = animation.FuncAnimation(fig, updatefig, interval=interval, blit=blit, save_count=len(activities))
     if save:
         ani.save('evolved.gif', dpi=dpi, writer="imagemagick")
-    plt.show()
+    # plt.show()
+    return ani
 
 
 def animate_plot1D(x, y, save=False, interval=50, dpi=80):
